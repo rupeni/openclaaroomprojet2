@@ -5,7 +5,8 @@
 
 *{
     box-sizing:border-box ;
-}
+ }
+  /*Nav  */
 nav{
     border: 1px solid red;
     display: flex;align-items: center;
@@ -24,4 +25,45 @@ nav a:hover {
 }
 .signup{
     color: black;
- /* EPISODE 6 */
+ }
+ /* body */
+ .wrapper
+ {
+     padding: 0 2rem;
+ }
+ .wrapper h1{
+     font-size: medium;
+ }
+/* seearch form */
+.search-form{
+    display:flex ;
+    
+}
+.search-form{
+    margin: 0 1rem;
+}
+.search-form i{
+    padding:  1rem;
+    background-color:lightgrey;
+    border-radius: 1rem 0 0 1rem ;
+    margin-left: 1rem;
+}
+.search-form input{
+    padding-right: 0.5rem
+    
+    
+}
+.search-form input::placeholder{
+    color:  black;
+    font-weight: bold;
+    flex-basis: 16rem;
+}
+.search-form button{
+    background-color:blue;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 0 1rem 1rem 0;
+    padding: 1rem;
+    border: none;
+}
