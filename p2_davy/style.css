@@ -49,15 +49,18 @@ nav a:hover {
     margin-left: 1rem;
 }
 .search-form input{
+    overflow: auto;
     padding-right: 0.5rem
     
-    
+
 }
 .search-form input::placeholder{
     color:  black;
     font-weight: bold;
     flex-basis: 16rem;
+    
 }
+
 .search-form button{
     background-color:blue;
     color: white;
@@ -66,4 +69,17 @@ nav a:hover {
     border-radius: 0 1rem 1rem 0;
     padding: 1rem;
     border: none;
+    cursor: pointer;
+}
+.fa-solid.fa-money-bill-wave{
+ color: blue;
+ background-color: lightblue;
+ padding: 1rem;
+ border-radius: 50%;   
+}
+.filter {
+border: 1px solid red;
+}
+.filter span{
+    font-weight: bold;
 }
