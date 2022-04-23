@@ -8,7 +8,7 @@
  }
   /*Nav  */
 nav{
-    border: 1px solid red;
+    
     display: flex;align-items: center;
     justify-content: flex-end;
     flex-wrap:wrap;
@@ -71,12 +71,19 @@ nav a:hover {
     border: none;
     cursor: pointer;
 }
+/* filtres */
 .filter-list{
     display:flex;
     align-items: center;
-    gap: 2rem;
+    gap:1rem 2rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
+.filter-list h1{
+    margin-bottom: 1;
+}
+   
+
 
 .filter .fa-solid {
  color: blue;
@@ -97,21 +104,28 @@ border: 2px solid grey;
 border-radius: 2rem;
 display: flex;
 align-items: center;
+transform: all 200ms ease;
 }
 .filter span{
     font-weight: bold;
-    padding: 1rem;
+    padding: 0 1rem;
 }
-/* infos */
-.search-result{
+.filter:hover{
+    background-color: #DEEBFF;
+    transform: scale(1.02);
+
+}
+/* result infos */
+.result-message {
     display: flex;
-    align-items: center;
+    align-items: center;  
+    gap: 1rem;
 }
-.search-result .fa-solid{
+.result-message .fa-solid {
     color: blue;
     width: 2rem;
     height: 2rem;
-    border: 1px solid grey;
+    border: 1px solid darkgray;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -119,3 +133,89 @@ align-items: center;
 
 }
 /* liste d'appartements */
+.appartements-list {
+    display: flex;
+    gap: 1rem;
+
+}
+ .appartements-list > div {
+  border: 1px solid red     ;
+  background-color: lightgrey;
+  padding: 1rem;
+  border-radius: 1rem ;
+ }
+ .appartements-list .city {
+     flex-basis: 66%;
+ }
+ .appartements-list .city a { 
+     font-weight: bold;
+ }
+ .appartements-list .popular {
+     flex-basis: 33%;
+ }
+ @media (max-width: 800px){
+.appartements-list { 
+flex-direction: column;
+}
+.popular {
+    order: -1;
+}
+ }
+ /* list des appartements */
+ .city-appartements-list {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: space-around;
+     margin-bottom: 1rem;
+
+ }
+ .city-appartements-list  div{
+     border: 1px solid blue;
+     
+     }
+     /* popular */
+     .appartements-list .popular-flex {
+         display: flex;
+         flex-direction: column   ;
+         gap: 1rem;
+     }
+     .appartements-list .popular-flex div{
+        border: 1px solid blue;
+     }
+     .appartements-list h3{
+         flex-basis: 100%;
+     }
+     @media (max-width: 800pix){
+         .appartements-list .popular-flex {
+         flex-direction: row; 
+        }
+     }
+     /* appartements cards */
+     .appartement-card{
+         background-color: white;
+         border-radius: 1rem;
+         padding: 0.2rem;
+         box-shadow: 0 0 16px #0000002e;
+        }
+        .appartement-card img{ 
+        border-radius: 1rem 1rem 0 0;
+        height: 10rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        }
+        .appartement-card p
+        .appartement-card h4{
+            margin: 0.2rem;
+        }
+
+     .blue {
+        color: blue;
+     }
+     .grey{
+         color: grey;
+     }
+     /* populaire */
+     
+    
